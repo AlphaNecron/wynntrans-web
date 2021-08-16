@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Wynntrans</title>
+	<meta name="viewport" content="width=device-width">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="styles/skeleton.css" />
+	<link rel="stylesheet" type="text/css" href="styles/index.css" />
+	<script src="script.js">
+	</script>
+</head>
+
+<body>
+	<div id="main">
+		<label for="origTextInput">Original text</label>
+    <input class="u-full-width" type="text" placeholder="The quick brown fox jumps over the lazy dog" id="origTextInput">
+    <label for="translatedTextOutput">Translated text</label>
+    <input class="u-full-width" type="text" readonly id="translatedTextOutput">
+    <div style="align-self: flex-end">
+    <select id="langDropdown">
+    <option value="w">Wynnic</option>
+    <option value="g">Gavellian</option>
+    </select>
+    <button type="submit" id="copyButton">Copy</button>
+    <button class="button-primary" type="submit" id="translateButton">Translate</button>
+    </div>
+    </div>
+  </body>
+</html>
