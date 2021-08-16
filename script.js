@@ -40,8 +40,9 @@ function convert(char) {
 }
 
 function copy() {
-  const content = document.getElementById('translatedTextOutput').value;
-  navigator.clipboard.writeText(content).then(() => alert('Copied to your clipboard.')).catch(err => console.log(`Error: ${err}`));
+  let output = document.getElementById('translatedTextOutput');
+  output.select();
+  document.execCommand("copy");
 }
 
 document.addEventListener('DOMContentLoaded', function () {
