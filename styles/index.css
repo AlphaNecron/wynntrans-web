@@ -3,7 +3,7 @@
   background: #FAFAFA;
   padding: 4px 8px;
   position: absolute;
-  width: 450px;
+  min-width: 350px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
