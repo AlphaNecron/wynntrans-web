@@ -15,10 +15,10 @@ function translate()
 function convert(char) {
   var lang = document.getElementById('langDropdown').value;
   if (lang === 'g') {
-    return toGavel(char);
+    return toGavel(char.toLowerCase());
   }
   else {
-    return toWynn(char);
+    return toWynn(char.toLowerCase());
   }
   function toGavel(char) {
     if (baseCharset.includes(char) && isLetter(char)) {
